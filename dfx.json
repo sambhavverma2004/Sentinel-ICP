@@ -1,0 +1,22 @@
+{
+	"version": 1,
+	"dfx": "0.15.0",
+	"canisters": {
+	  "sentinel_core": {
+		"type": "motoko",
+		"main": "canisters/sentinel_core/main.mo"
+	  },
+	  "frontend": {
+		"dependencies": [
+		  "sentinel_core"
+		],
+		"source": [
+		  "dist/"
+		],
+		"type": "assets",
+		"build": "npm run build"
+	  }
+	}
+  }
+  
+  
